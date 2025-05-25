@@ -68,7 +68,7 @@ def index():
       <p><button type="submit">Upload & Predict</button></p>
     </form>
     """
-@app.route("/")
+@app.route("/hello")
 def hello():
     return "Hello, Flask is up and running!"
     
