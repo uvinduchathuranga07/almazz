@@ -60,7 +60,7 @@ def transcribe_and_predict(audio_path: str):
 
 # ——— Flask routes ———
 @app.route("/predct", methods=["POST"])
-def predict():
+def predct():
     # 1) Ensure an 'audio' file was sent
     if "audio" not in request.files:
         return jsonify({"error": "Missing file 'audio'"}), 400
@@ -81,7 +81,7 @@ def predict():
     # 5) Return only the predicted stage
     return jsonify({"predicted_stage": stage})
 
-    
+
 @app.route("/", methods=["GET"])
 def index():
     return """
