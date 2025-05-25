@@ -1,0 +1,6 @@
+Flask>=2.0
+openai-whisper
+torch           
+pandas
+scikit-learn
+ffmpeg-python  
