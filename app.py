@@ -12,7 +12,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # ——— Flask routes ———
-@app.route("/predct", methods=["POST"])
+@app.route("/predict", methods=["POST"])
 def predct():
     # 1) Ensure an 'audio' file was sent
     if "audio" not in request.files:
