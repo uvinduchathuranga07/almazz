@@ -13,7 +13,7 @@ app = Flask(__name__)
 # ——— Load models once at startup ———
 
 # Whisper ASR
-whisper_model = whisper.load_model("medium")
+whisper_model = whisper.load_model("tiny") 
 
 # RF model & label encoder
 with open("alzheimers_rf_model.pkl", "rb") as f:
